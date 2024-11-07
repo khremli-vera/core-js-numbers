@@ -301,7 +301,7 @@ function getSumOfDigits(num) {
   return num
     .toString()
     .split('')
-    .reduce(function (a, b) {
+    .reduce(function reduceNum(a, b) {
       return +a + +b;
     });
 }
@@ -633,7 +633,6 @@ function getHypotenuse(a, b) {
  * 15 => 8
  */
 function getCountOfOddNumbers(number) {
-  console.log(number);
   return Math.ceil(Math.abs(number) / 2);
 }
 
